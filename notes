@@ -1,0 +1,82 @@
+What is a constructor in Java?
+-------------------------------
+-> It is a special construct defined inside a java class
+-> looks like a method but doesn't have any return type not even void
+-> It is used to initialize the object
+-> It is called during the object creation time
+-> Java Compiler provides a default constructor if no constructor was provided by the developer
+-> It can be overloaded i.e. different type/number of parameters
+    a. parameterless constructor
+    b. parameterized constructor
+-> Constructor Chaining:A constructor always call same class constructor using this() or super class constructor using super()
+-> Its name is same as class-name
+
+this keyword:
+-------------
+-> refers the current object
+-> used to diff between instance variables & parameters if their name is same
+-> used to call same class constructor
+-> used to refer current object fields/methods
+
+super keyword:
+--------------
+-> refers the super object
+-> used to refer superclass object fields/methods
+-> used to call superclass constructor
+
+A Java Class:
+--------------------
+public class ClassName{
+    instance/static fields
+    instance/static methods
+    constructors
+    getters/setters
+    toString()
+    inner classes
+}
+
+Object:
+-----------
+An object is an instance of the class. It has a copy of instance fields/methods mentioned by the class
+
+class Demo{
+    private int num;
+}
+
+let's say, we have 100 objects. Every object will have a copy of 'num' instance field
+
+
+-> static fields/methods don't belong to an object, instead they belong to whole class and shared by all objects
+-> static fields/methods are used to manage the common data/behavior across all the objects
+
+Abstract Class:
+---------------
+A class declared with 'abstract' keyword is called abstract class
+It can't be instantiated
+It can have abstract methods and non-abstract methods as well
+It can have constructors
+It can have instance/static fields
+It should be inherited/implemented by child classes
+It generally works as a superclass in a hierarchy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
