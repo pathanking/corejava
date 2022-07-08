@@ -17,6 +17,7 @@ public class SmartDevices {
                 SmartWatch smartWatch = SmartWatchFactory.smartWatch(input);
                 smartWatch.pickCall();
                 smartWatch.showTime();
+                smartWatch.showDate();
                 break;
             case 2:
                 System.out.println("Buy SmartPhone : [iphone] | [samsung] | [OnePlus]");

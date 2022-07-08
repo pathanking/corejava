@@ -60,6 +60,148 @@ It should be inherited/implemented by child classes
 It generally works as a superclass in a hierarchy
 
 
+String Handling:
+------------------
+java.lang.String >> immutable
+java.lang.StringBuilder >> mutable, not synchronized
+java.lang.StringBuffer >> mutable, synchronized
+
+Exception Handling:
+--------------------
+What is an exception?
+-> An exception is an object created by JVM representing abnormal scenarios at the runtime
+-> An exception is created due to abnormal events in the program ie. access a field/method with
+null reference, access an array beyond its index, read a file which doesn't exist,
+divide a number with zero etc...
+
+-> When a exception is generated, JVM looks for a corresponding handler (catch block), if the
+handler is found then exception is handled & program continues normally
+
+-> When a exception is generated, JVM looks for a corresponding handler (catch block), if the
+handler is not found then exception is not handled & program terminates abruptly
+
+=> keywords: try, catch, throw, throws, finally
+
+try block: contains code that might generate exception
+catch block:  contains code to handle exceptions generated in try block
+throw: used to create & throw exceptions explicitly
+throws: used to declare exceptions in method/constructor signature
+finally: always run irrespective of exception generated or not; cleanup resources
+
+Throwable is the superclass of all exceptions/errors
+
+-> Exception
+-> Error & It's child classes, RuntimeException & its child classes (unchecked)
+
+Collection:
+------------
+Collection provides mechanisms to store, manipulate & retrieve group of objects
+
+Array Limitations:
+    1. fixed size
+    2. static
+    3. wast of memory
+
+    int[] integers = new int[100];
+
+
+Collections Provide:
+---------------------
+-> flexible storage facility
+-> predefined algorithms ie. search, sort, delete etc..
+-> ordered collection
+-> unique collection
+-> built-in data structures
+
+Interfaces:
+Collection
+List
+Set
+Sorted
+NavigableSet
+Queue
+Deque
+Map
+SortedMap
+Enumeration
+Iterator
+ListIterator
+
+Implementations:
+
+ArrayList
+LinkedList
+Vector
+Stack
+ArrayDeque
+HashSet
+LinkedHashSet
+TreeSet
+HashMap
+LinkedHashMap
+TreeMap
+Hashtable
+
+ArrayList vs LinkedList
+--------------------------------
+ArrayList: dynamic array (resizable array)
+LinkedList: doubly linked list
+
+ArrayList: storing and random access of elements
+LinkedList: frequent insertion & deletions or manipulations
+
+ArrayList: elements are stored in contiguous manner
+LinkedList: elements are not stored in contiguous manner
+
+Lambda Expression:
+-------------------
+-> helps to write short & concise code
+-> anonymous function
+-> written only for functional interfaces' functional method
+-> helps to write declarative programming
+
+Syntax:                 (arguments) -> {lambda body};
+
+    int i -> {return i*i};
+
+    (int a, int b) -> Integer.max(a,b);
+
+    (a,b) -> Integer.max(a,b) 'OR'  Integer::max
+
+-> writing arguments types is optional
+-> mentioning 'return' is optional
+
+Java Stream API:
+--------------------
+stream is a sequence of elements
+no storage
+provides support for declarative programming (what to do; don't tell how to do)
+source of stream api are arrays, collections, I/O channels(files), function generator
+
+BaseStream is the super interface of all stream classes/interfaces
+Stream
+IntStream
+LongStream
+DoubleStream
+Arrays.stream()
+Collection.stream()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

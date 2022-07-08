@@ -1,9 +1,12 @@
 package core.oop.abstraction;
 
 public interface MyInterface {
+    int age = 22;
+
     void foo();
 
-    default void bar(String message) {
+    //void bar();
+    default void bar(String message) { //backward compatibility
         System.out.println(message);
     }
 

@@ -10,9 +10,7 @@ class InterfaceTest{
     public static void main(String[] args) {
         MyInterface object = new MyInterfaceImpl();
         object.foo();
-        object.bar("hello java!!");
+        //object.bar("hello java!!");
         MyInterface.fooBar();
-
-
     }
 }
